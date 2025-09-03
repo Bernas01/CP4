@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoShop - Produtos Sustentáveis</title>
+  <meta name="description" content="E-commerce de produtos sustentáveis e ecológicos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-eco" href="index.html">
+      <i class="fa-solid fa-leaf me-2"></i>EcoShop
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <form class="d-flex me-3" role="search">
+        <input class="form-control" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+      </form>
+      <a href="#" class="btn btn-eco position-relative" data-bs-toggle="offcanvas" data-bs-target="#offCanvasCart">
+        <i class="fa-solid fa-cart-shopping me-1"></i> Carrinho
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<header class="container mt-4">
+  <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner rounded-4 shadow-sm">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop" class="d-block w-100" alt="Moda sustentável">
+        <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded-3 p-3">
+          <h5>Moda Sustentável</h5>
+          <p>Peças conscientes, duráveis e estilosas.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1600&auto=format&fit=crop" class="d-block w-100" alt="Tecnologia verde">
+        <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded-3 p-3">
+          <h5>Tecnologia Verde</h5>
+          <p>Produtos eco-friendly para o dia a dia.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?q=80&w=1600&auto=format&fit=crop" class="d-block w-100" alt="Casa sustentável">
+        <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded-3 p-3">
+          <h5>Casa Sustentável</h5>
+          <p>Itens essenciais para um lar consciente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="container my-5">
+  <div class="d-flex justify-content-between align-items-end mb-3">
+    <h2 class="section-title">Produtos em destaque</h2>
+    <a href="categorias.html" class="btn btn-outline-eco">Ver todos</a>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 product-card">
+        <img src="assets/image/camiseta_algodao_organico_masculina_evolvee_675_1_b56b28a72464eb3b49079ce2e6f35ca2.webp" class="card-img-top" alt="Camiseta orgânica">
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">Camiseta de Algodão Orgânico</h6>
+          <p class="card-text text-muted mb-2">R$ 89,90</p>
+          <div class="mt-auto d-grid gap-2">
+            <a href="produto.html" class="btn btn-outline-eco">Detalhes</a>
+            <button class="btn btn-eco add-to-cart" data-name="Camiseta Orgânica" data-price="89.90">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 product-card">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Creme natural">
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">Creme Hidratante Natural</h6>
+          <p class="card-text text-muted mb-2">R$ 59,90</p>
+          <div class="mt-auto d-grid gap-2">
+            <a href="produto.html" class="btn btn-outline-eco">Detalhes</a>
+            <button class="btn btn-eco add-to-cart" data-name="Creme Natural" data-price="59.90">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 product-card">
+        <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Garrafa reutilizável">
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">Garrafa Reutilizável Inox</h6>
+          <p class="card-text text-muted mb-2">R$ 99,90</p>
+          <div class="mt-auto d-grid gap-2">
+            <a href="produto.html" class="btn btn-outline-eco">Detalhes</a>
+            <button class="btn btn-eco add-to-cart" data-name="Garrafa Inox" data-price="99.90">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 product-card">
+        <img src="assets/image/download.jpg" class="card-img-top" alt="Escova bambu">
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">Escova de Dentes Bambu</h6>
+          <p class="card-text text-muted mb-2">R$ 19,90</p>
+          <div class="mt-auto d-grid gap-2">
+            <a href="produto.html" class="btn btn-outline-eco">Detalhes</a>
+            <button class="btn btn-eco add-to-cart" data-name="Escova Bambu" data-price="19.90">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5 class="mb-3"><i class="fa-solid fa-leaf me-2 text-eco"></i>EcoShop</h5>
+        <p>Promovendo um estilo de vida mais consciente com produtos sustentáveis.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="mb-3">Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="link-light text-decoration-none">Home</a></li>
+          <li><a href="categorias.html" class="link-light text-decoration-none">Categorias</a></li>
+          <li><a href="contato.html" class="link-light text-decoration-none">Contato</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="mb-3">Siga a EcoShop</h6>
+        <div class="d-flex gap-3 fs-4">
+          <a href="#" class="link-light"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="link-light"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="link-light"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="link-light"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center small mt-4 opacity-75">© 2025 EcoShop. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasCart" aria-labelledby="offCanvasCartLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offCanvasCartLabel"><i class="fa-solid fa-cart-shopping me-2"></i>Seu Carrinho</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group mb-3" id="cartItems"></ul>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <strong>Total:</strong>
+      <span id="cartTotal">R$ 0,00</span>
+    </div>
+    <button class="btn btn-eco w-100" id="checkoutBtn">Finalizar compra</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
